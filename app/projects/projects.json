@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1",
+    "title": "Business Mastery",
+    "category": "Business",
+    "description": "A 5-day immersive program designed to help business owners and entrepreneurs take their businesses to the next level.",
+    "image": "/placeholder.svg?height=400&width=600",
+    "date": "2023-05-15",
+    "location": "Las Vegas, NV",
+    "attendees": 5000,
+    "testimonials": [
+      {
+        "name": "John Smith",
+        "company": "ABC Corp",
+        "quote": "Business Mastery completely transformed how I approach my business. Revenue is up 300% since implementing what I learned."
+      },
+      {
+        "name": "Sarah Johnson",
+        "company": "XYZ Enterprises",
+        "quote": "The strategies I learned at Business Mastery helped me scale my company from $1M to $10M in just 18 months."
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "content": "Business Mastery is Tony Robbins' premier business event, designed to help entrepreneurs and business owners create sustainable growth and lasting success. Over five immersive days, participants learn cutting-edge strategies for marketing, sales, operations, and leadership from Tony and other world-class business experts. The program includes hands-on workshops, interactive exercises, and networking opportunities with like-minded entrepreneurs. Participants leave with a comprehensive business plan and the tools needed to implement immediate changes for dramatic results."
+  },
+  {
+    "id": "2",
+    "title": "Date With Destiny",
+    "category": "Personal Development",
+    "description": "A 6-day immersive event where you'll discover your purpose and create an extraordinary quality of life.",
+    "image": "/placeholder.svg?height=400&width=600",
+    "date": "2023-08-22",
+    "location": "Palm Beach, FL",
+    "attendees": 2500,
+    "testimonials": [
+      {
+        "name": "Michael Brown",
+        "company": "Self-employed",
+        "quote": "Date With Destiny was the most transformative week of my life. I finally discovered my true purpose and have been living it ever since."
+      },
+      {
+        "name": "Jennifer Lee",
+        "company": "Healthcare Professional",
+        "quote": "I came to Date With Destiny feeling lost and left with absolute clarity about who I am and what I want to create in my life."
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "content": "Date With Destiny is Tony Robbins' most intimate and transformative program, where participants discover their true purpose and create an extraordinary quality of life. Over six days, Tony works directly with attendees to identify their core values, beliefs, and rules that drive their decisions and shape their destiny. Through powerful exercises, deep introspection, and group activities, participants create a new empowering blueprint for their lives. The event culminates in a personal commitment ceremony where attendees declare their new path forward. Many describe Date With Destiny as the most significant week of their lives, leading to profound changes in relationships, career, health, and overall fulfillment."
+  },
+  {
+    "id": "3",
+    "title": "Unleash The Power Within",
+    "category": "Personal Development",
+    "description": "A 4-day event where you'll break through limitations and create the quality of life you desire and deserve.",
+    "image": "/placeholder.svg?height=400&width=600",
+    "date": "2023-10-05",
+    "location": "San Jose, CA",
+    "attendees": 10000,
+    "testimonials": [
+      {
+        "name": "David Wilson",
+        "company": "Tech Entrepreneur",
+        "quote": "The fire walk alone was worth the price of admission. I've never felt so empowered to take on challenges in my life."
+      },
+      {
+        "name": "Lisa Garcia",
+        "company": "Marketing Director",
+        "quote": "UPW helped me break through fears that had been holding me back for years. I'm now living a life I never thought possible."
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "content": "Unleash The Power Within (UPW) is Tony Robbins' flagship personal development event, designed to help participants break through limitations and create the quality of life they desire. The program begins with the famous firewalk experience, where attendees walk across hot coals to demonstrate that they can overcome any fear. Over four high-energy days, participants learn strategies for mastering their physical health, emotions, relationships, finances, and time. The event combines Tony's proven methods with the latest insights in psychology, neuroscience, and performance. UPW is known for its high-energy atmosphere, with music, movement, and interactive exercises that create lasting change. Participants leave with practical tools to transform any area of their life and the motivation to implement them immediately."
+  },
+  {
+    "id": "4",
+    "title": "Leadership Academy",
+    "category": "Leadership",
+    "description": "A 4-day intensive program designed to develop extraordinary leaders who create massive value and impact.",
+    "image": "/placeholder.svg?height=400&width=600",
+    "date": "2023-11-18",
+    "location": "New York, NY",
+    "attendees": 1500,
+    "testimonials": [
+      {
+        "name": "Robert Chen",
+        "company": "Global Investments Inc.",
+        "quote": "Leadership Academy gave me the tools to transform my team's performance and culture. Our productivity has increased by 40%."
+      },
+      {
+        "name": "Amanda Taylor",
+        "company": "Retail Chain CEO",
+        "quote": "I've attended many leadership programs, but none as impactful as this one. My leadership style has completely evolved."
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "content": "Leadership Academy is Tony Robbins' premier leadership development program, designed to transform managers into extraordinary leaders who create massive value and impact. The four-day intensive training focuses on the psychology of leadership, strategic innovation, team dynamics, and creating a compelling vision. Participants learn how to inspire and influence others, make high-quality decisions under pressure, and build high-performing teams. The program includes role-playing exercises, case studies, and personalized coaching to help leaders identify their strengths and areas for growth. Tony shares the same strategies he's used to coach presidents, professional athletes, and Fortune 500 CEOs. Graduates of Leadership Academy return to their organizations with renewed purpose and practical tools to drive sustainable results."
+  },
+  {
+    "id": "5",
+    "title": "Wealth Mastery",
+    "category": "Finance",
+    "description": "A 4-day financial immersion event where you'll learn proven strategies for creating lasting wealth and financial freedom.",
+    "image": "/placeholder.svg?height=400&width=600",
+    "date": "2024-01-25",
+    "location": "Miami, FL",
+    "attendees": 3000,
+    "testimonials": [
+      {
+        "name": "Thomas Wright",
+        "company": "Retired",
+        "quote": "The investment strategies I learned at Wealth Mastery helped me double my retirement portfolio in just two years."
+      },
+      {
+        "name": "Patricia Lopez",
+        "company": "Small Business Owner",
+        "quote": "I came in financially stressed and left with a clear plan for achieving financial freedom within five years."
+      }
+    ],
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "content": "Wealth Mastery is Tony Robbins' comprehensive financial education program, designed to help participants create lasting wealth and financial freedom. Over four intensive days, attendees learn proven investment strategies, tax optimization techniques, and wealth preservation methods from Tony and a team of financial experts. The curriculum covers stock market investing, real estate, business growth, retirement planning, and protection from market volatility. Participants develop a personalized financial plan based on their goals and risk tolerance, with practical steps for implementation. The program emphasizes both the psychology of wealth and the technical aspects of financial management. Wealth Mastery is suitable for beginners seeking to build their first investment portfolio and experienced investors looking to optimize their strategies for greater returns."
+  }
+]
+
