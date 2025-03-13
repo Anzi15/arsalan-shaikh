@@ -1,4 +1,11 @@
+"use client"
 export default function ContactPage() {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
+    const data = Object.fromEntries(formData.entries())
+    console.log(data)
+  }
   return (
     <main className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
@@ -25,7 +32,7 @@ export default function ContactPage() {
                 will get back to you as soon as possible.
               </p>
 
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={(e)=>{handleSubmit(e)}}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
@@ -146,11 +153,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Address</h3>
                       <p className="text-gray-600">
-                        6991 E Camelback Rd
-                        <br />
-                        Scottsdale, AZ 85251
-                        <br />
-                        United States
+                      House No.C-416/2, Mohalla Upper Queens Road, Sukkur, Pakistan
                       </p>
                     </div>
                   </div>
@@ -174,7 +177,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Phone</h3>
-                      <p className="text-gray-600">(800) 488-6040</p>
+                      <p className="text-gray-600">(+92) 300 3334333</p>
                     </div>
                   </div>
 
@@ -197,7 +200,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600">support@tonyrobbins.com</p>
+                      <p className="text-gray-600">shaikharsalan@hotmail.com</p>
                     </div>
                   </div>
 
@@ -218,16 +221,7 @@ export default function ContactPage() {
                         />
                       </svg>
                     </div>
-                    <div>
-                      <h3 className="text-lg font-semibold mb-1">Hours</h3>
-                      <p className="text-gray-600">
-                        Monday - Friday: 8:00 AM - 8:00 PM EST
-                        <br />
-                        Saturday: 9:00 AM - 5:00 PM EST
-                        <br />
-                        Sunday: Closed
-                      </p>
-                    </div>
+
                   </div>
                 </div>
 
@@ -235,7 +229,8 @@ export default function ContactPage() {
                   <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://twitter.com/BRArsalanSheikh"
+                      target="_blank"
                       className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 hover:text-black transition-colors"
                     >
                       <svg
@@ -248,7 +243,8 @@ export default function ContactPage() {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="https://twitter.com/BRArsalanSheikh"
+                      target="_blank"
                       className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 hover:text-black transition-colors"
                     >
                       <svg
@@ -261,31 +257,21 @@ export default function ContactPage() {
                       </svg>
                     </a>
                     <a
-                      href="#"
-                      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 hover:text-black transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                      </svg>
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 hover:text-black transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                      </svg>
-                    </a>
+  href="https://www.facebook.com/BRArsalanShaikh"
+  target="_blank"
+  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 hover:text-black transition-colors"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M22.675 0h-21.35C.596 0 0 .593 0 1.326v21.348C0 23.407.596 24 1.325 24h11.495v-9.293H9.69v-3.622h3.13V8.414c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.098 2.796.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z" />
+  </svg>
+</a>
+
+
                   </div>
                 </div>
               </div>
@@ -296,16 +282,20 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">Find Us</h2>
-          <div className="h-96 bg-gray-300 rounded-lg">
-            {/* This would be replaced with an actual map component */}
-            <div className="w-full h-full flex items-center justify-center">
-              <p className="text-gray-600">Map would be displayed here</p>
-            </div>
-          </div>
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
+          Find Us
+        </h2>
+        <div className="h-96 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            title="Google Maps"
+            className="w-full h-full border-0"
+            src="https://maps.google.com/maps?q=House%20No.C-416/2,%20Mohalla%20Upper%20Queens%20Road,%20Sukkur,%20Pakistan&output=embed"
+            allowFullScreen
+          ></iframe>
         </div>
-      </section>
+      </div>
+    </section>
     </main>
   )
 }

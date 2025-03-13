@@ -7,9 +7,9 @@ export default function Footer() {
       <section className="py-16 bg-black text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to live an extraordinary life?</h2>
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full">
+          <Link href={"/contact"} className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full">
             Get Started
-          </button>
+          </Link>
         </div>
       </section>
 
