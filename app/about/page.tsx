@@ -23,11 +23,11 @@ export default function AboutPage() {
     <div className="flex flex-col md:flex-row items-start gap-12">
       <div className="md:w-1/3">
         <Image
-          src="/arsalan-shaikh.jpg" // Update with actual image path
+          src="/luxury-mayor-of-sukkur.jpg" // Update with actual image path
           alt="Barrister Arsalan Islam Shaikh"
           width={400}
           height={600}
-          className="rounded-lg shadow-lg"
+          className="rounded-lg aspect-[9/16] object-cover shadow-lg"
         />
       </div>
       <div className="md:w-2/3">
@@ -52,7 +52,7 @@ export default function AboutPage() {
 </section>
 
 {/* Timeline Section */}
-<section className="py-16 bg-gray-100" id="education">
+<section className="py-16 hidden md:flex bg-gray-100" id="education">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-12 text-center">Life & Education Timeline</h2>
 
@@ -116,8 +116,82 @@ export default function AboutPage() {
 </section>
 
 
+<section className="py-16 bg-gray-100 md:hidden flex" id="education">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-12 text-center">Life & Education Timeline</h2>
+
+    <div className="relative max-w-4xl mx-auto">
+      {/* Timeline line (hidden on small screens) */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-blue-600 h-full hidden md:block"></div>
+
+      {/* Timeline items */}
+      {[
+        {
+          year: "1986",
+          title: "Born into a Political Legacy",
+          description: "Born into a family with a strong political background in Sindh.",
+        },
+        {
+          year: "2007",
+          title: "LLB from University of London",
+          description: "Completed his Bachelor of Laws (LLB) from the University of London.",
+        },
+        {
+          year: "2008",
+          title: "BAR AT LAW from Lincoln’s Inn",
+          description: "Became a Barrister after completing his legal training at Lincoln’s Inn, UK.",
+        },
+        {
+          year: "2010",
+          title: "LLM from University of the West of England",
+          description: "Pursued a Master of Laws (LLM) degree, specializing in international law.",
+        },
+        {
+          year: "2016",
+          title: "Elected as Mayor of Sukkur",
+          description: "Became the unopposed Mayor of Sukkur, focusing on urban development and infrastructure.",
+        },
+        {
+          year: "2023",
+          title: "Re-elected as Mayor of Sukkur",
+          description: "Won the elections again, continuing his mission to transform Sukkur.",
+        },
+        {
+          year: "2024",
+          title: "Appointed as Spokesperson for Government of Sindh",
+          description: "Took on a key leadership role in provincial governance.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className={`relative mb-12 ${
+            index % 2 === 0 ? "md:flex md:justify-end md:text-right" : "md:flex md:justify-start md:text-left"
+          }`}
+        >
+          {/* Timeline Indicator (Only visible on medium and larger screens) */}
+          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-blue-600 border-4 border-white z-10"></div>
+
+          {/* Content Box */}
+          <div
+            className={`w-full md:w-5/12 p-6 bg-white rounded-lg shadow-md ${
+              index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+            }`}
+          >
+            <span className="text-blue-600 font-bold">{item.year}</span>
+            <h3 className="text-xl font-bold mt-1">{item.title}</h3>
+            <p className="mt-2 text-gray-600">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
 {/* Philosophy Section */}
-<section className="py-16 bg-white">
+<section className="py-16 bg-white" id="philosophy">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-12 text-center">Core Philosophy</h2>
 
