@@ -151,7 +151,7 @@ export default function Footer() {
                   </div>
           </div>
         </div>
-        <div className="text-center text-gray-400 py-4 text-lg">
+        {/* <div className="text-center text-gray-400 py-4 text-lg">
           <Link href="https://anziandco.com?refer=arsalanShaikh"
           target="_blank"
            className="hover:text-white">
@@ -161,7 +161,7 @@ export default function Footer() {
               </b>
           </Link>
 
-        </div>
+        </div> */}
       </footer>
     </>
   )
