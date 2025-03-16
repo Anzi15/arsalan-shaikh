@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import ReactPlayer from 'react-player'
 import NewsletterForm from "./components/Newletter"
+import YouthVolunteerForm from "@/components/YouthVolunteerForm"
 
 export default function Home() {
   return (
@@ -85,7 +86,7 @@ export default function Home() {
 <section className="py-16 bg-white">
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row items-center">
-      <div className="md:w-1/2 max-w-full mb-8 md:mb-0">
+      <div className="md:w-1/2 max-w-screen overflow-hidden mb-8 md:mb-0 hidden md:block">
         {/* <Image
           src="/arsalan_shaikh" // Replace with actual image
           alt="Barrister Arsalan Shaikh"
@@ -100,12 +101,23 @@ export default function Home() {
     src="https://www.youtube.com/embed/41RDQj0d24Q?autoplay=1&mute=1&controls=0&modestbranding=1&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&rel=0" 
     frameBorder="0" 
     allow="autoplay; encrypted-media" 
-    allowFullScreen>
+    allowFullScreen 
+    className="max-w-screen">
 </iframe>
 
 
 
       </div>
+      <div className="relative w-full pb-[56.25%] h-0 overflow-hidden rounded-lg md:hidden py-6">
+  <iframe 
+    className="absolute top-0 left-0 w-full h-full" 
+    src="https://www.youtube.com/embed/41RDQj0d24Q?autoplay=1&mute=1&controls=0&modestbranding=1&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&rel=0" 
+    frameBorder="0" 
+    allow="autoplay; encrypted-media" 
+    allowFullScreen
+  ></iframe>
+</div>
+
       <div className="md:w-1/2 md:pl-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Transforming Sukkur through Leadership
@@ -195,6 +207,8 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+< YouthVolunteerForm/>
 
 
 
